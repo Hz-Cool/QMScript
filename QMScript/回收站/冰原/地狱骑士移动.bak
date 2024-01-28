@@ -1,0 +1,113 @@
+[General]
+SyntaxVersion=2
+BeginHotkey=57
+BeginHotkeyMod=0
+PauseHotkey=0
+PauseHotkeyMod=0
+StopHotkey=54
+StopHotkeyMod=0
+RunOnce=1
+EnableWindow=
+MacroID=8c836c9e-f54d-4b33-8b1c-285faa8a7ee1
+Description=地狱骑士移动_自动备份
+Enable=0
+AutoRun=0
+[Repeat]
+Type=0
+Number=1
+[SetupUI]
+Type=2
+QUI=
+[Relative]
+SetupOCXFile=
+[Comment]
+
+[Script]
+Sub first
+
+	While True
+		FindColor 1144,87,1146,89,"FFA210",intX,intY
+		If intX <= 0 and intY <= 0 Then 
+			MoveTo 1151,96
+			KeyPress "A",1
+			LeftClick 1
+			Delay 800
+		Else 
+			call second
+		End If
+	Wend
+	
+End Sub
+
+
+
+Sub second
+
+	While True
+		FindColor 1179,92,1181,94,"FFA210",intX,intY
+		If intX <= 0 and intY <= 0 Then 
+			MoveTo 1174,99
+			KeyPress "A",1
+			LeftClick 1
+			Delay 800
+		Else 
+			call third
+		End If
+	Wend
+	
+End Sub
+
+
+Sub third
+
+	While True
+		FindColor 1145,121,1147,123,"FFA210",intX,intY
+		If intX <= 0 and intY <= 0 Then 
+			MoveTo 1155,118 
+			KeyPress "A",1
+			LeftClick 1
+			Delay 800
+		Else 
+			call fourth
+		End If
+	Wend
+	
+End Sub
+
+
+Sub fourth
+
+	While True
+		FindColor 1179,131,1181,133,"FFA210",intX,intY
+		If intX <= 0 and intY <= 0 Then 
+			MoveTo 1174,138
+			KeyPress "A",1
+			LeftClick 1
+			Delay 800
+		Else 
+			call fifth
+		End If
+	Wend
+	
+End Sub
+
+
+Sub fifth
+
+	While True
+		FindColor 1179,109,1181,111,"FFA210",intX,intY
+		If intX <= 0 and intY <= 0 Then 
+			MoveTo 1174,117
+			KeyPress "A",1
+			LeftClick 1
+			Delay 800
+		Else 
+			call first
+		End If
+	Wend
+	
+End Sub
+
+
+Call fourth
+

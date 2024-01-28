@@ -1,0 +1,308 @@
+[General]
+SyntaxVersion=2
+BeginHotkey=121
+BeginHotkeyMod=0
+PauseHotkey=0
+PauseHotkeyMod=0
+StopHotkey=123
+StopHotkeyMod=0
+RunOnce=1
+EnableWindow=
+MacroID=c5427f81-fb72-4f21-bb48-5308509ecb15
+Description=·Ö½â(NEW)_×Ô¶¯±¸·Ý
+Enable=1
+AutoRun=0
+[Repeat]
+Type=0
+Number=1
+[SetupUI]
+Type=2
+QUI=
+[Relative]
+SetupOCXFile=
+[Comment]
+
+[Script]
+Sub beibao
+	Delay 1000*5
+	While True
+		FindPic 777,588,804,602,"C:\hehe\±³°ü´ò¿ª.bmp",0.9,intX,intY
+		If intX > 0 And intY > 0 Then 
+			Call ×ÏÑ¥×Ó
+		Else 
+			MoveTo 898, 721
+			LeftClick 1
+			Delay 1000
+		End If
+	Wend
+End Sub
+
+Sub ×ÏÑ¥×Ó
+	While True
+		MoveTo 361,122
+		FindPic 370,192,824,535,"C:\hehe\×ÏÑ¥×Ó.bmp",0.9,intX,intY
+		If intX > 0 And intY > 0 Then
+		 	MoveTo intX, intY
+		 	Delay 1
+			RightClick 1
+			Delay 1
+			LeftClick 1
+		Else 
+			Call ×ÏÎäÆ÷
+		End If
+		Delay 700
+	Wend	
+End Sub
+
+Sub ×ÏÎäÆ÷
+	While True
+		MoveTo 361,122
+		FindPic 370,192,824,535,"C:\hehe\×ÏÎäÆ÷.bmp",0.9,intX,intY
+		If intX > 0 And intY > 0 Then
+		 	MoveTo intX, intY
+		 	Delay 1
+			RightClick 1
+			Delay 1
+			LeftClick 1
+		Else 
+			Call ×ÏÏîÁ´
+		End If
+		Delay 700
+	Wend	
+End Sub
+
+Sub ×ÏÏîÁ´
+	While True
+		MoveTo 361,122
+		FindPic 370,192,824,535,"C:\hehe\×ÏÏîÁ´.bmp",0.9,intX,intY
+		If intX > 0 And intY > 0 Then
+		 	MoveTo intX, intY
+		 	Delay 1
+			RightClick 1
+			Delay 1
+			LeftClick 1
+		Else 
+			Call ×Ïîø¼×
+		End If
+		Delay 700
+	Wend	
+End Sub
+
+Sub ×Ïîø¼×
+	While True
+		MoveTo 361,122
+		FindPic 370,192,824,535,"C:\hehe\îø¼×.bmp",0.9,intX,intY
+		If intX > 0 And intY > 0 Then
+		 	MoveTo intX, intY
+		 	Delay 1
+			RightClick 1
+			Delay 1
+			LeftClick 1
+		Else 
+			Call À¶Ñ¥×Ó
+		End If
+		Delay 700
+	Wend	
+End Sub
+
+
+Sub À¶Ñ¥×Ó
+	While True
+		MoveTo 361,122
+		FindPic 370,192,824,535,"C:\hehe\À¶Ñ¥×Ó.bmp",0.9,intX,intY
+		If intX > 0 And intY > 0 Then
+		 	MoveTo intX, intY
+		 	Delay 1
+			RightClick 1
+			Delay 1
+			LeftClick 1
+		Else 
+			Call À¶ÎäÆ÷
+		End If
+		Delay 700
+	Wend	
+End Sub
+
+Sub À¶ÎäÆ÷
+	While True
+		MoveTo 361,122
+		FindPic 370,192,824,535,"C:\hehe\À¶ÎäÆ÷.bmp",0.9,intX,intY
+		If intX > 0 And intY > 0 Then
+		 	MoveTo intX, intY
+		 	Delay 1
+			RightClick 1
+			Delay 1
+			LeftClick 1
+		Else 
+			Call À¶ÏîÁ´
+		End If
+		Delay 700
+	Wend	
+End Sub
+
+Sub À¶ÏîÁ´
+	While True
+		MoveTo 361,122
+		FindPic 370,192,824,535,"C:\hehe\À¶ÏîÁ´.bmp",0.9,intX,intY
+		If intX > 0 And intY > 0 Then
+		 	MoveTo intX, intY
+		 	Delay 1
+			RightClick 1
+			Delay 1
+			LeftClick 1
+		Else 
+			Call À¶îø¼×
+		End If
+		Delay 700
+	Wend	
+End Sub
+
+Sub À¶îø¼×
+	While True
+		MoveTo 361,122
+		FindPic 370,192,824,535,"C:\hehe\îø¼×.bmp",0.9,intX,intY
+		If intX > 0 And intY > 0 Then
+		 	MoveTo intX, intY
+		 	Delay 1
+			RightClick 1
+			Delay 1
+			LeftClick 1
+		Else 
+			Call °×Ñ¥×Ó
+		End If
+		Delay 700
+	Wend	
+End Sub
+
+
+Sub °×Ñ¥×Ó
+	While True
+		MoveTo 361,122
+		FindPic 370,192,824,535,"C:\hehe\°×Ñ¥×Ó.bmp",0.9,intX,intY
+		If intX > 0 And intY > 0 Then
+		 	MoveTo intX, intY
+		 	Delay 1
+			RightClick 1
+			Delay 1
+			LeftClick 1
+		Else 
+			Call °×ÎäÆ÷
+		End If
+		Delay 700
+	Wend	
+End Sub
+
+Sub °×ÎäÆ÷
+	While True
+		MoveTo 361,122
+		FindPic 370,192,824,535,"C:\hehe\°×ÎäÆ÷.bmp",0.9,intX,intY
+		If intX > 0 And intY > 0 Then
+		 	MoveTo intX, intY
+		 	Delay 1
+			RightClick 1
+			Delay 1
+			LeftClick 1
+		Else 
+			Call °×ÏîÁ´
+		End If
+		Delay 700
+	Wend	
+End Sub
+
+Sub °×ÏîÁ´
+	While True
+		MoveTo 361,122
+		FindPic 370,192,824,535,"C:\hehe\°×ÏîÁ´.bmp",0.9,intX,intY
+		If intX > 0 And intY > 0 Then
+		 	MoveTo intX, intY
+		 	Delay 1
+			RightClick 1
+			Delay 1
+			LeftClick 1
+		Else 
+			Call °×îø¼×
+		End If
+		Delay 700
+	Wend	
+End Sub
+
+Sub °×îø¼×
+	While True
+		MoveTo 361,122
+		FindPic 370,192,824,535,"C:\hehe\îø¼×.bmp",0.9,intX,intY
+		If intX > 0 And intY > 0 Then
+		 	MoveTo intX, intY
+		 	Delay 1
+			RightClick 1
+			Delay 1
+			LeftClick 1
+		Else 
+			Call lanzhuangbei
+		End If
+		Delay 700
+	Wend	
+End Sub
+
+
+
+
+Sub lanzhuangbei
+	While True
+		MoveTo 361,122
+		FindColorEx 370,192,824,535,"ECD03F",0,0.9,intX,intY
+		If intX > 0 And intY > 0 Then 
+			FindColorEx intX-15, intY-15, intX+15, intY+15, "948E4A", 0, 0.9, intX1, intY1
+			If intX>0 and intY > 0 Then
+		 		MoveTo intX, intY
+		 		Delay 1
+				RightClick 1
+				Delay 1
+				LeftClick 1
+			Else 
+				Call lankaijia
+			End If
+		Else
+			Call lankaijia
+		End If
+		Delay 300
+	Wend
+End Sub
+
+
+
+Sub lankaijia
+	While True
+		MoveTo 361,122
+		FindColorEx 370,192,824,535,"DFB33A",0,0.9,intX,intY
+		If intX > 0 And intY > 0 Then 
+			FindColorEx intX-15, intY-15, intX+15, intY+15, "3A4A23", 0, 0.9, intX1, intY1
+			If intX>0 and intY > 0 Then
+		 		MoveTo intX, intY
+		 		Delay 1
+				RightClick 1
+				Delay 1
+				LeftClick 1
+			Else 
+				Call close
+			End If
+			Else 
+				Call close
+		End If
+		Delay 300
+	Wend
+End Sub
+
+Sub close
+	While True
+		FindPic 777,588,804,602,"C:\hehe\±³°ü´ò¿ª.bmp",0.9,intX,intY
+		If intX > 0 And intY > 0 Then 
+			MoveTo 898, 721
+			LeftClick 1
+			Delay 1500
+		Else 
+			Call beibao
+		End If
+	Wend
+End Sub
+
+Call beibao

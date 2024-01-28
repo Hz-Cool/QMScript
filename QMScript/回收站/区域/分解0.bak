@@ -1,0 +1,125 @@
+[General]
+SyntaxVersion=2
+BeginHotkey=121
+BeginHotkeyMod=0
+PauseHotkey=0
+PauseHotkeyMod=0
+StopHotkey=123
+StopHotkeyMod=0
+RunOnce=1
+EnableWindow=
+MacroID=cec78f1d-5a93-4cfd-8d18-c9d67256d367
+Description=分解_自动备份
+Enable=1
+AutoRun=0
+[Repeat]
+Type=0
+Number=1
+[SetupUI]
+Type=2
+QUI=
+[Relative]
+SetupOCXFile=
+[Comment]
+
+[Script]
+Sub beibao
+	Delay 1000*40
+	While True
+		FindPic 778,590,804,602,"C:\hehe\背包打开.bmp",0.6,intX,intY
+		If intX > 0 And intY > 0 Then 
+			Call zizhuangbei
+		Else 
+			MoveTo 879,722
+			LeftClick 1
+			Delay 1000
+		End If
+	Wend
+End Sub
+
+Sub zizhuangbei
+	While True
+		MoveTo 360,180
+		FindColorEx 370,192,824,535,"E23AA0",0,0.9,intX,intY
+		If intX > 0 And intY > 0 Then 
+			FindColorEx intX-15, intY-15, intX+15, intY+15, "535A6B", 0, 0.9, intX1, intY1
+			If intX>0 and intY > 0 Then
+		 		MoveTo intX, intY
+		 		Delay 10
+				RightClick 1
+				Delay 10
+				LeftClick 1
+			Else 
+				Call lanzhuangbei
+			End If
+		Else 
+			Call lanzhuangbei
+		End If
+		Delay 236
+	Wend	
+End Sub
+
+
+Sub lanzhuangbei
+	While True
+		MoveTo 360,180
+		FindColorEx 370,192,824,535,"ECD03F",0,0.9,intX,intY
+		If intX > 0 And intY > 0 Then 
+			FindColorEx intX-15, intY-15, intX+15, intY+15, "948E4A", 0, 0.5, intX1, intY1
+			If intX>0 and intY > 0 Then
+		 		MoveTo intX, intY
+		 		Delay 10
+				RightClick 1
+				Delay 10
+				LeftClick 1
+			Else 
+				Call lankaijia
+			End If
+		Else
+			Call lankaijia
+		End If
+		Delay 236
+	Wend
+End Sub
+
+
+
+Sub lankaijia
+	While True
+		MoveTo 360,180
+		FindColorEx 370,192,824,535,"DFB33A",0,0.9,intX,intY
+		If intX > 0 And intY > 0 Then 
+			FindColorEx intX-15, intY-15, intX+15, intY+15, "3A4A23", 0, 0.6, intX1, intY1
+			If intX>0 and intY > 0 Then
+		 		MoveTo intX, intY
+		 		Delay 10
+				RightClick 1
+				Delay 10
+				LeftClick 1
+			Else 
+				Call close
+			End If
+			Else 
+				Call close
+		End If
+		Delay 236
+	Wend
+End Sub
+
+Sub close
+	Delay 1000
+	MoveTo 831, 135
+	LeftClick 10
+	While True
+		FindPic 798,590 ,804,602,"C:\hehe\背包打开.bmp",0.6,intX,intY
+		If intX > 0 And intY > 0 Then 
+			MoveTo 879,722
+			LeftClick 1
+			Delay 2550
+		Else 
+			Call beibao
+		End If
+	Wend
+End Sub
+
+Call beibao
